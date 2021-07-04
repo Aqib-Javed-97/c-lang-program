@@ -18,6 +18,7 @@ int main()
             switch(discr<0){
                 case 0: rt1=rt2=-cofPow1/(2*cofPow2);
                         printf("Roots are real and same: %.2f %.2f",rt1,rt2);
+                        break;
                 case 1:rt1 = rt2 = -cofPow1 / (2 * cofPow2);
                         img = sqrt(-discr) / (2 * cofPow2);
                         printf("Roots are complex and same: %.2f + i%.2f and %.2f - i%.2f",rt1,img,rt2,img);
