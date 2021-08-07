@@ -14,12 +14,12 @@ int main()
     scanf("%d",&pos);
     printf("Enter the value to be added: ");
     scanf("%d",&val);
-    for(i=n-1;i>pos;i--){
+    for(i=n-1;i>=pos;i--){
         temp=arr[i];
         arr[i]=arr[i-1];
         arr[i+1]=temp;
     }
-    arr[pos]=val;
+    arr[pos-1]=val;
     for(i=0;i<n+1;i++){
         printf("%d ",arr[i]);
     }
